@@ -22,7 +22,7 @@ Setup your machine.
 #### Running tests
 Note: ```OpenTerminal/CMD -> cd <change-to-project-location>```
 1. First step is to update the webdriver using ```npm run update-driver``` (Not a mandatory step everytime)
-2. Second we need to start the webdriver using ```npm start-driver``` (It is mandatory before running tests)
+2. Second we need to start the webdriver using ```npm run start-driver``` (It is mandatory before running tests)
 3. So, now open another terminal and navigate to the project location and then execute ```npm run ui-tests``` to run the tests.
 
 ---
