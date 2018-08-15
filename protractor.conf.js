@@ -24,7 +24,7 @@ exports.config = {
     capabilities: {
         'browserName': 'chrome',
         shardTestFiles: true,
-        maxInstances: 2,
+        maxInstances: 1,
 
         // Firefox Options
         // 'moz:firefoxOptions': {
@@ -32,10 +32,10 @@ exports.config = {
         // }
 
         // Chrome Options
-        chromeOptions: {
-            // args: ["--headless", "--disable-gpu", "--window-size=800x600"]
-            args: ["--headless",  "--disable-gpu"]
-        }
+        // chromeOptions: {
+        //     // args: ["--headless", "--disable-gpu", "--window-size=800x600"]
+        //     args: ["--headless",  "--disable-gpu"]
+        // }
     },
 
     // Run Chrome & Firefox Parallely
@@ -52,8 +52,7 @@ exports.config = {
     cucumberOpts: {
         compiler: ['js:babel-register'],
         require: './src/js/step_definitions/*.js',
-        format: 'json:./reports/json/cucumber_report.json',
-        // format: `pretty`
+        format: 'pretty',
         // defaultTimeoutInterval: 160000,
     },
 
